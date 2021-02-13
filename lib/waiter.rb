@@ -26,10 +26,8 @@ def new_meal(customer, total, tip=0)
   end 
   
   def best_tipper
-  
-    best_tip = meals.sort { |a,b| a.tip <=> b.tip }
+  best_tip = meals.sort { |a,b| a.tip <=> b.tip }
   best_tip.last.customer
-  
   end
 
 
